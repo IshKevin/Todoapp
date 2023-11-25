@@ -2,7 +2,7 @@ import './Button.css'
 
 function Button() {
   return (
-    <div className='styles'>Button</div>
+    <div className='styles'>Add Task</div>
   )
 }
 
