@@ -1,5 +1,6 @@
 .input-box{
     border-radius: 1rem;
-    width: 36rem;
-    height:3rem;
+    width: 100%;
+    height:1.5rem;
+    align-items: center;
 }
