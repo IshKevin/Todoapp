@@ -1,12 +1,14 @@
-import InputBox from '../../components/InputBox/InputBox'
+import AddTodo from '../AddTodo/AddTodo'
+import TodoList from '../TodoList/TodoList'
+import { Todos } from '../Todos/Todos'
 import './Home.css'
 
 
 const Home = () => {
   return (
     <div className="main-body">
-        <h1>Task schedure</h1>
-        <InputBox/>
+      <AddTodo/>
+      <TodoList/>
     </div>
   )
 }
