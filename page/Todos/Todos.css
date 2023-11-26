@@ -1,7 +1,6 @@
 .todoList{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 1rem;
     margin-top: 0.3rem;
     width: 550px;
@@ -12,4 +11,50 @@
     font-size: 1.2rem;
     color: black;
     font-weight: normal;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons{
+    display: flex;
+    gap: 0.5rem;
+}   
+.delete{
+    background-color: rgb(155, 25, 25);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.important{
+    background-color: rgb(25, 155, 25);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.completed{
+    background-color: rgb(25, 25, 155);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.edit{
+    background-color: rgb(155, 155, 25);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
