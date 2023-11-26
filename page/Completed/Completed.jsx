@@ -1,9 +1,19 @@
-import React from 'react'
 
-const Completed = () => {
-  return (
-    <div>Completed</div>
-  )
-}
+const Completed = ({ todos }) => {
+    if (!todos || todos.length === 0) {
+        return <p>No completed tasks</p>;
+      }
+    const completedTodos = todos.filter(todo => todo.completed);
 
-export default Completed
+    return (
+        <div>
+            {completedTodos.map(todo => (
+                <div key={todo.id}>
+                    <p>{todo.text}</p>
+                </div>
+            ))}
+        </div>
+    );
+};
+
+export default Completed;
