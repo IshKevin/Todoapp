@@ -25,14 +25,14 @@ const AddTodo = () => {
 
   return (
     <>
-      <div>Task schedule</div> 
+      <div className='main-head'>Task schedule</div> 
       <div className="AddTodo">
         <input 
           type="textbox" 
           value={inputValue} 
           onChange={handleInputChange}  
           className="input-box"/> 
-        <button type="button" onClick={handleAddTodo}>Add</button>   
+        <button type="button" onClick={handleAddTodo} className='button'>Add</button>   
       </div>
     </>
   )
