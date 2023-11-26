@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import './Todos.css'
 import { TodoContext } from '../../context/TodoContext'
+import { FaTrash } from 'react-icons/fa';
+import { MdLabelImportant } from "react-icons/md";
 
 export const Todos = ({ id, text,completed }) => {
   const [todos, setTodos] = useContext(TodoContext);
@@ -30,8 +32,11 @@ export const Todos = ({ id, text,completed }) => {
       checked={isChecked}
       onChange={e=> completedTodo(e)}/>
       <div className="todoItem">{text}</div> {/* Update to use text instead of title */}
+      <div>
       <button type="button" className="delete" id={id}
-      onClick={e=>deletTodo(e)}>Delete</button>
+      onClick={e=>deletTodo(e)}><FaTrash/></button>
+        <button type="button" className="important"><MdLabelImportant/></button>
+        </div>
     </div>
   )
 }
